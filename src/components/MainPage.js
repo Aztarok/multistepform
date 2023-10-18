@@ -37,9 +37,9 @@ const MainPage = () => {
                     {change === 3 ? <ThirdStep /> : null}
                     {change === 4 ? <FourthStep /> : null}
                     <div className="flex h-full">
-                        {change !== 1 ? <button onClick={e => handlePrev(e)} className="flex bg-white text-gray-500 mt-auto mr-auto rounded-lg py-[.5vw] px-[1vw]">Go Back</button> : null}
-                        {change < 4 && change > 0 ? <button onClick={e => handleNext(e)} className="flex bg-marineBlue text-white mt-auto ml-auto rounded-lg py-[.5vw] px-[1vw]">Next Page</button> : null}
-                        {change > 3 ? <button onClick={e => handleSubmit(e)} className="flex bg-marineBlue text-white mt-auto ml-auto rounded-lg py-[.5vw] px-[1vw]">Confirm</button> : null}
+                        {change !== 1 ? <button onClick={e => handlePrev(e)} className="flex bg-white text-gray-500 font-medium mt-auto mr-auto rounded-lg py-[.5vw] px-[1vw]">Go Back</button> : null}
+                        {change < 4 && change > 0 ? <button onClick={e => handleNext(e)} className="flex bg-marineBlue font-medium text-white mt-auto ml-auto rounded-lg py-[.5vw] px-[1vw]">Next Page</button> : null}
+                        {change > 3 ? <button onClick={e => handleSubmit(e)} className="flex bg-marineBlue font-bold text-white mt-auto ml-auto rounded-lg py-[.5vw] px-[1vw]">Confirm</button> : null}
                     </div>
                 </div>
                 
