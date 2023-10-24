@@ -42,3 +42,15 @@ body {
     border: 2px solid transparent;
     outline: none;
 }
+
+  
+  /* First <img> element (bg-sidebar-desktop.svg) */
+  .content-area {
+    position: relative;
+    z-index: 2; /* Ensure it's above the second <div> */
+  }
+  
+/* Second <img> element (bg-sidebar-mobile.svg) */
+.content-background {
+    z-index: 1; /* Set z-index to ensure it's behind the second <div> */
+}
